@@ -1,0 +1,401 @@
+\section{Tables' States}
+
+\TableWide{Branch}{
+  \underline{Phone\_number} & Name & Country & State & City & Street & Building & Apartment & \textit{Employee\_SSN} \\
+  \hline
+  +96111111111 & Beirut Main & Lebanon & Beirut & Beirut & Hamra & 10 & 1 & 123456789 \\
+  +96122222222 & Tripoli Branch & Lebanon & North & Tripoli & Mina Street & 5 & 12 & 987654321 \\
+  +96133333333 & Sidon Hub & Lebanon & South & Sidon & Corniche & 3 & 6 & 543216789 \\
+  +96144444444 & Zahle Branch & Lebanon & Beqaa & Zahle & Bekaa St & 8 & 4 & 123459876 \\
+  +96155555555 & Jounieh Store & Lebanon & Mount Lebanon & Jounieh & Coastal Rd & 7 & 3 & 567894321 \\
+  +96166666666 & Byblos Outlet & Lebanon & Mount Lebanon & Byblos & Roman Street & 6 & 5 & 678912345 \\
+  +96177777777 & Tyre Shop & Lebanon & South & Tyre & Port Road & 2 & 1 & 876543219 \\
+  +96188888888 & Baalbek Point & Lebanon & Beqaa & Baalbek & Temple Rd & 4 & 2 & 345678912 \\
+  +96199999999 & Batroun Corner & Lebanon & North & Batroun & Old City & 1 & 1 & 456789123 \\
+  +96112345678 & Downtown Center & Lebanon & Beirut & Beirut & Downtown & 5 & 11 & 234567891 \\
+  +96198765432 & Achrafieh Depot & Lebanon & Beirut & Achrafieh & Armenia St & 9 & 8 & 234567891 \\
+  +96124681357 & Dora Warehouse & Lebanon & Mount Lebanon & Dora & Industrial Zone & 3 & 2 & 789123456 \\
+  +96165432198 & Aley Branch & Lebanon & Mount Lebanon & Aley & Souk Street & 4 & 10 & 654321987 \\
+  +96111223344 & Choueifat Station & Lebanon & Mount Lebanon & Choueifat & Railway Rd & 2 & 7 & 321987654 \\
+  +96144332211 & Antelias Spot & Lebanon & Mount Lebanon & Antelias & Highway Rd & 8 & 5 & 987123456
+}
+
+\Table{Category}{
+  \underline{Name} & Description & \textit{Parent\_Category\_Name} \\
+  \hline
+  Electronics & Devices and gadgets & NULL \\
+  Clothing & Apparel and fashion items & NULL \\
+  Furniture & Home and office furniture & NULL \\
+  Books & Printed and digital books & Stationery \\
+  Groceries & Food and daily supplies & Health \\
+  Sports & Sporting equipment and apparel & Clothing \\
+  Beauty & Cosmetics and skincare products & Health \\
+  Toys & Toys for kids and adults & Sports \\
+  Automotive & Car parts and accessories & Electronics \\
+  Jewelry & Watches, rings, and necklaces & Fashion \\
+  Health & Medical supplies and equipment & Beauty \\
+  Stationery & Office and school supplies & Furniture \\
+  Pets & Pet food and accessories & Groceries \\
+  Music & Instruments and music equipment & Art \\
+  Art & Art supplies and crafts & Stationery
+}
+
+\Table{Colors}{
+  \underline{\textit{Product\_SKU}} & \underline{Product\_color} \\
+  \hline
+  1001 & Red \\
+  1002 & Blue \\
+  1003 & Green \\
+  1004 & Black \\
+  1005 & White \\
+  1006 & Yellow \\
+  1007 & Pink \\
+  1008 & Purple \\
+  1009 & Orange \\
+  1010 & Brown \\
+  1011 & Gray \\
+  1012 & Gold \\
+  1013 & Silver \\
+  1014 & Beige \\
+  1015 & Navy
+}
+
+\TableWide{Coupon}{
+  \underline{Code} & Description & Discount\_percent & Times\_used & Minimum\_order\_amount & Maximum\_order\_amount & Usage\_limit & Valid\_from & Valid\_to & \textit{Order\_ID} & Discount\_amount & Redeem\_date \\
+  \hline
+  DIS10 & 10\% off & 10 & 25 & 50 & 500 & 100 & 2024-01-01 & 2024-12-31 & O101 & 5 & 2024-10-01 \\
+  DIS20 & 20\% off & 20 & 40 & 100 & 1000 & 50 & 2024-02-01 & 2024-11-30 & O102 & 10 & 2024-09-15 \\
+  FREESHIP & Free shipping & 0 & 100 & 0 & 200 & 200 & 2024-05-01 & 2024-10-31 & O103 & 0 & 2024-08-12 \\
+  SAVE15 & 15\% off & 15 & 60 & 75 & 750 & 75 & 2024-03-01 & 2024-09-30 & O104 & 12 & 2024-07-07 \\
+  BOGO & Buy 1 Get 1 & 50 & 20 & 100 & 1000 & 25 & 2024-01-01 & 2024-08-31 & O105 & 50 & 2024-06-06 \\
+  HOLIDAY50 & 50\% off & 50 & 10 & 200 & 2000 & 10 & 2024-12-01 & 2024-12-31 & O106 & 100 & 2024-12-05 \\
+  FLASH5 & 5\% off & 5 & 150 & 25 & 250 & 500 & 2024-07-01 & 2024-08-01 & O107 & 2 & 2024-07-12 \\
+  SUMMER30 & 30\% off & 30 & 80 & 150 & 1500 & 30 & 2024-06-01 & 2024-09-01 & O108 & 45 & 2024-07-20 \\
+  BLACKFRIDAY & 40\% off & 40 & 90 & 300 & 3000 & 100 & 2024-11-29 & 2024-11-29 & O109 & 120 & 2024-11-29 \\
+  NEWYEAR25 & 25\% off & 25 & 70 & 200 & 2000 & 75 & 2024-12-31 & 2025-01-01 & O110 & 50 & 2024-12-31 \\
+  WELCOME & 10\% for new users & 10 & 200 & 50 & 500 & 300 & 2024-01-01 & 2024-12-31 & O111 & 10 & 2024-01-10 \\
+  VIP20 & 20\% VIP discount & 20 & 30 & 150 & 1500 & 50 & 2024-01-01 & 2024-12-31 & O112 & 30 & 2024-02-14 \\
+  BIRTHDAY & 25\% off on birthday & 25 & 10 & 100 & 1000 & 20 & 2024-01-01 & 2024-12-31 & O113 & 25 & 2024-03-03 \\
+  CLEARANCE & Up to 70\% off & 70 & 5 & 500 & 5000 & 10 & 2024-11-01 & 2024-11-15 & O114 & 350 & 2024-11-05 \\
+  LOYALTY & 15\% off for loyal customers & 15 & 50 & 100 & 1000 & 60 & 2024-01-01 & 2024-12-31 & O115 & 15 & 2024-04-22
+}
+
+\TableWide{Customer}{
+  \underline{Phone\_number} & Email & First\_name & Last\_name & Gender & Registration\_date & Password\_hashed & Date\_of\_birth & Country & State & City & Street & Building & Apartment \\
+  \hline
+  +96134567890 & john.doe@gmail.com & John & Doe & Male & 2023-02-14 & ******** & 1990-03-05 & Lebanon & Beirut & Beirut & Hamra & 12 & 2 \\
+  +96198765432 & jane.smith@yahoo.com & Jane & Smith & Female & 2022-10-22 & ******** & 1985-06-15 & Lebanon & North & Tripoli & Mina Street & 4 & 5 \\
+  +96145678901 & alice.brown@outlook.com & Alice & Brown & Female & 2024-03-01 & ******** & 1992-01-20 & Lebanon & South & Sidon & Corniche & 7 & 3 \\
+  +96167890123 & bob.jones@hotmail.com & Bob & Jones & Male & 2021-07-18 & ******** & 1988-11-02 & Lebanon & Mount Lebanon & Jounieh & Coastal Rd & 8 & 6 \\
+  +96178901234 & charlie.evans@gmail.com & Charlie & Evans & Male & 2020-05-30 & ******** & 1995-09-09 & Lebanon & Beirut & Achrafieh & Armenia St & 9 & 7 \\
+  +96189012345 & diana.lee@aol.com & Diana & Lee & Female & 2023-01-15 & ******** & 1989-04-25 & Lebanon & Beqaa & Zahle & Bekaa St & 2 & 1 \\
+  +96190123456 & frank.wilson@protonmail.com & Frank & Wilson & Male & 2019-11-20 & ******** & 1975-12-12 & Lebanon & North & Batroun & Old City & 1 & 1 \\
+  +96101234567 & emma.white@gmail.com & Emma & White & Female & 2024-06-01 & ******** & 1993-08-17 & Lebanon & Mount Lebanon & Byblos & Roman Street & 6 & 3 \\
+  +96123456789 & george.king@live.com & George & King & Male & 2022-09-05 & ******** & 1980-02-22 & Lebanon & South & Tyre & Port Road & 5 & 10 \\
+  +96156789012 & hannah.scott@gmail.com & Hannah & Scott & Female & 2021-12-25 & ******** & 2000-07-30 & Lebanon & Mount Lebanon & Antelias & Highway Rd & 8 & 9 \\
+  +96167890124 & jack.miller@yahoo.com & Jack & Miller & Male & 2023-08-10 & ******** & 1987-05-15 & Lebanon & Beqaa & Baalbek & Temple Rd & 4 & 2 \\
+  +96178901235 & isabella.taylor@outlook.com & Isabella & Taylor & Female & 2024-02-02 & ******** & 1991-03-18 & Lebanon & Beirut & Downtown & Downtown & 3 & 11 \\
+  +96189012346 & kevin.martin@hotmail.com & Kevin & Martin & Male & 2022-07-19 & ******** & 1984-09-25 & Lebanon & Mount Lebanon & Aley & Souk Street & 4 & 10 \\
+  +96190123457 & laura.harris@icloud.com & Laura & Harris & Female & 2021-04-22 & ******** & 1996-11-05 & Lebanon & Beirut & Hamra & Hamra St & 2 & 8 \\
+  +96101234568 & mike.anderson@protonmail.com & Mike & Anderson & Male & 2023-05-03 & ******** & 1998-01-11 & Lebanon & Mount Lebanon & Choueifat & Railway Rd & 7 & 3
+}
+
+\TableWide{Department}{
+  \underline{Name} & Number\_of\_employees & \textit{Employee\_SSN} & Manager\_start\_date \\
+  \hline
+  Sales & 30 & 123456789 & 2022-03-01 \\
+  Marketing & 25 & 987654321 & 2021-06-15 \\
+  HR & 15 & 123459876 & 2023-01-10 \\
+  Finance & 20 & 567894321 & 2019-10-05 \\
+  Operations & 35 & 543216789 & 2020-08-25 \\
+  IT & 10 & 678912345 & 2024-04-18 \\
+  Customer Support & 12 & 876543219 & 2022-09-12 \\
+  Logistics & 18 & 345678912 & 2020-11-20 \\
+  Legal & 8 & 456789123 & 2021-02-14 \\
+  R\&D & 14 & 234567891 & 2018-12-22 \\
+  Training & 9 & 789123456 & 2023-03-27 \\
+  Procurement & 11 & 654321987 & 2021-05-30 \\
+  Admin & 7 & 321987654 & 2022-07-04 \\
+  Facilities & 6 & 987123456 & 2019-06-01 \\
+  Compliance & 5 & 654789321 & 2020-01-17
+}
+
+\Table{Department location}{
+  \underline{Department\_name} & \underline{Location} \\
+  \hline
+  Sales & Beirut \\
+  Marketing & Tripoli \\
+  HR & Zahle \\
+  Finance & Jounieh \\
+  Operations & Sidon \\
+  IT & Byblos \\
+  Customer Support & Tyre \\
+  Logistics & Baalbek \\
+  Legal & Batroun \\
+  R\&D & Achrafieh \\
+  Training & Dora \\
+  Procurement & Aley \\
+  Admin & Choueifat \\
+  Facilities & Antelias \\
+  Compliance & Downtown Beirut
+}
+
+\Table{Dependent}{
+  \underline{\textit{Employee\_SSN}} & \underline{Name} & Gender & Date\_of\_birth & Relationship \\
+  \hline
+  123456789 & Sarah Doe & Female & 2015-04-15 & Daughter \\
+  987654321 & James Smith & Male & 2013-07-20 & Son \\
+  123459876 & Emily Brown & Female & 2017-02-28 & Daughter \\
+  567894321 & Lucas Jones & Male & 2018-11-05 & Son \\
+  543216789 & Olivia Evans & Female & 2016-09-12 & Daughter \\
+  678912345 & Ethan White & Male & 2020-03-22 & Son \\
+  876543219 & Chloe Lee & Female & 2014-08-01 & Daughter \\
+  345678912 & Liam Harris & Male & 2015-12-15 & Son \\
+  456789123 & Mia Taylor & Female & 2018-10-03 & Daughter \\
+  234567891 & Noah Wilson & Male & 2021-06-08 & Son \\
+  789123456 & Sophia Martin & Female & 2019-05-25 & Daughter \\
+  654321987 & Benjamin Scott & Male & 2012-01-19 & Son \\
+  321987654 & Emma Anderson & Female & 2015-07-13 & Daughter \\
+  987123456 & Mason Miller & Male & 2018-03-09 & Son \\
+  654789321 & Ava Thomas & Female & 2016-02-04 & Daughter
+}
+
+\Table{Driver}{
+  \underline{License\_number} & Driving\_experience\_years & License\_expiry\_date & \textit{Employee\_SSN} \\
+  \hline
+  DL1001 & 5 & 2025-12-31 & 123456789 \\
+  DL1002 & 3 & 2026-06-30 & 987654321 \\
+  DL1003 & 10 & 2027-04-15 & 567894321 \\
+  DL1004 & 7 & 2028-01-10 & 543216789 \\
+  DL1005 & 2 & 2026-08-20 & 678912345 \\
+  DL1006 & 6 & 2024-11-25 & 876543219 \\
+  DL1007 & 8 & 2029-09-09 & 345678912 \\
+  DL1008 & 12 & 2025-05-05 & 456789123 \\
+  DL1009 & 4 & 2024-07-18 & 234567891 \\
+  DL1010 & 15 & 2030-03-30 & 789123456 \\
+  DL1011 & 1 & 2024-12-15 & 654321987 \\
+  DL1012 & 9 & 2027-02-14 & 321987654 \\
+  DL1013 & 14 & 2031-06-11 & 987123456 \\
+  DL1014 & 11 & 2029-12-21 & 654789321 \\
+  DL1015 & 13 & 2026-10-07 & 123459876
+}
+
+\TableWide{Employee}{
+  \underline{SSN} & Position & Salary & Hire\_date & Gender & Date\_of\_birth & Email & First\_name & Last\_name & Phone\_number & Country & State & City & Street & Building & Apartment & \textit{Branch\_phone\_number} & \textit{Supervisor\_SSN} & \textit{Department\_name} \\
+  \hline
+  123456789 & Manager & 3000 & 2022-03-01 & Male & 1985-05-12 & john.doe@example.com & John & Doe & +96134567890 & Lebanon & Beirut & Beirut & Hamra & 12 & 2 & +96111111111 & NULL & Sales \\
+  987654321 & Marketing Head & 2800 & 2021-06-15 & Female & 1988-08-23 & jane.smith@example.com & Jane & Smith & +96198765432 & Lebanon & North & Tripoli & Mina St & 5 & 3 & +96122222222 & 123456789 & Marketing \\
+  123459876 & HR Manager & 2700 & 2023-01-10 & Male & 1990-02-28 & bob.jones@example.com & Bob & Jones & +96167890123 & Lebanon & Beqaa & Zahle & Bekaa St & 2 & 1 & +96144444444 & 123456789 & HR \\
+  567894321 & Finance Manager & 3200 & 2019-10-05 & Female & 1986-11-09 & alice.brown@example.com & Alice & Brown & +96145678901 & Lebanon & Mount Lebanon & Jounieh & Coastal Rd & 7 & 2 & +96155555555 & 123456789 & Finance \\
+  543216789 & Operations Head & 3500 & 2020-08-25 & Male & 1978-07-05 & david.evans@example.com & David & Evans & +96178901234 & Lebanon & South & Sidon & Corniche & 6 & 3 & +96133333333 & 567894321 & Operations \\
+  678912345 & IT Specialist & 2000 & 2024-04-18 & Female & 1995-03-18 & emma.white@example.com & Emma & White & +96101234567 & Lebanon & Mount Lebanon & Byblos & Roman St & 5 & 4 & +96166666666 & 567894321 & IT \\
+  876543219 & Support Manager & 2500 & 2022-09-12 & Male & 1983-09-27 & frank.wilson@example.com & Frank & Wilson & +96190123456 & Lebanon & South & Tyre & Port Rd & 3 & 2 & +96177777777 & 543216789 & Customer Support \\
+  345678912 & Logistics Head & 3000 & 2020-11-20 & Female & 1989-04-15 & olivia.harris@example.com & Olivia & Harris & +96156789012 & Lebanon & Beqaa & Baalbek & Temple Rd & 4 & 3 & +96188888888 & 543216789 & Logistics \\
+  456789123 & Legal Advisor & 2900 & 2021-02-14 & Male & 1982-12-12 & george.king@example.com & George & King & +96123456789 & Lebanon & North & Batroun & Old City & 2 & 1 & +96199999999 & 567894321 & Legal \\
+  234567891 & R\&D Manager & 3100 & 2018-12-22 & Female & 1987-06-06 & sophia.martin@example.com & Sophia & Martin & +96178901235 & Lebanon & Beirut & Achrafieh & Armenia St & 8 & 2 & +96112345678 & 543216789 & R\&D \\
+  789123456 & Trainer & 2200 & 2023-03-27 & Male & 1991-09-30 & kevin.martin@example.com & Kevin & Martin & +96189012346 & Lebanon & Mount Lebanon & Dora & Industrial Zone & 5 & 2 & +96124681357 & 234567891 & Training \\
+  654321987 & Procurement Officer & 2400 & 2021-05-30 & Female & 1993-01-14 & laura.harris@example.com & Laura & Harris & +96167890124 & Lebanon & Mount Lebanon & Aley & Souk St & 4 & 10 & +96165432198 & 234567891 & Procurement \\
+  321987654 & Admin Assistant & 1800 & 2022-07-04 & Male & 1996-07-19 & jack.miller@example.com & Jack & Miller & +96101234568 & Lebanon & Mount Lebanon & Choueifat & Railway Rd & 2 & 8 & +96111223344 & 789123456 & Admin \\
+  987123456 & Facilities Manager & 2700 & 2019-06-01 & Female & 1979-03-02 & diana.lee@example.com & Diana & Lee & +96189012345 & Lebanon & Mount Lebanon & Antelias & Highway Rd & 9 & 5 & +96144332211 & 789123456 & Facilities \\
+  654789321 & Compliance Officer & 2600 & 2020-01-17 & Male & 1984-11-04 & mike.anderson@example.com & Mike & Anderson & +96190123457 & Lebanon & Beirut & Downtown & Downtown & 6 & 3 & +96111223344 & 789123456 & Compliance
+}
+
+\Table{Image URLs}{
+  \underline{\textit{Product\_SKU}} & \textit{Customer\_phone\_number} & \underline{Product\_Image\_URL} \\
+  \hline
+  1001 & +96134567890 & https://example.com/image1.jpg \\
+  1002 & +96198765432 & https://example.com/image2.jpg \\
+  1003 & +96145678901 & https://example.com/image3.jpg \\
+  1004 & +96167890123 & https://example.com/image4.jpg \\
+  1005 & +96178901234 & https://example.com/image5.jpg \\
+  1006 & +96189012345 & https://example.com/image6.jpg \\
+  1007 & +96190123456 & https://example.com/image7.jpg \\
+  1008 & +96101234567 & https://example.com/image8.jpg \\
+  1009 & +96123456789 & https://example.com/image9.jpg \\
+  1010 & +96156789012 & https://example.com/image10.jpg \\
+  1011 & +96167890124 & https://example.com/image11.jpg \\
+  1012 & +96178901235 & https://example.com/image12.jpg \\
+  1013 & +96189012346 & https://example.com/image13.jpg \\
+  1014 & +96190123457 & https://example.com/image14.jpg \\
+  1015 & +96101234568 & https://example.com/image15.jpg
+}
+
+\Table{Located in}{
+  \underline{\textit{Product\_SKU}} & \underline{\textit{Branch\_phone\_number}} & Quantity & Shelf\_location \\
+  \hline
+  1001 & +96111111111 & 50 & A1 \\
+  1002 & +96122222222 & 30 & B2 \\
+  1003 & +96133333333 & 20 & C3 \\
+  1004 & +96144444444 & 15 & D4 \\
+  1005 & +96155555555 & 60 & E5 \\
+  1006 & +96166666666 & 25 & F6 \\
+  1007 & +96177777777 & 10 & G7 \\
+  1008 & +96188888888 & 35 & H8 \\
+  1009 & +96199999999 & 40 & I9 \\
+  1010 & +96112345678 & 50 & J10 \\
+  1011 & +96198765432 & 70 & K11 \\
+  1012 & +96124681357 & 20 & L12 \\
+  1013 & +96165432198 & 15 & M13 \\
+  1014 & +96111223344 & 5 & N14 \\
+  1015 & +96144332211 & 55 & O15
+}
+
+\TableWide{Order}{
+  \underline{Order\_id} & Notes & Payment\_method & Total\_amount & Is\_online & \textit{Employee\_SSN} & \textit{Customer\_phone\_number} & Date & \textit{Driver\_license\_number} \\
+  \hline
+  O101 & Expedited delivery & Credit Card & 150 & Yes & 123456789 & +96134567890 & DL1001 & 2024-10-01 \\
+  O102 & Gift wrap included & Cash on Delivery & 200 & No & 987654321 & +96198765432 & DL1002 & 2024-09-15 \\
+  O103 & Deliver before 5 PM & PayPal & 75 & Yes & 567894321 & +96145678901 & DL1003 & 2024-08-12 \\
+  O104 & Call on arrival & Credit Card & 300 & No & 543216789 & +96167890123 & DL1004 & 2024-07-07 \\
+  O105 & Special instructions & Apple Pay & 500 & Yes & 678912345 & +96178901234 & DL1005 & 2024-06-06 \\
+  O106 & Holiday gift & Credit Card & 1000 & No & 876543219 & +96189012345 & DL1006 & 2024-12-05 \\
+  O107 & Contactless delivery & PayPal & 250 & Yes & 345678912 & +96190123456 & DL1007 & 2024-07-12 \\
+  O108 & Scheduled for 3 PM & Credit Card & 150 & Yes & 456789123 & +96101234567 & DL1008 & 2024-07-20 \\
+  O109 & Express delivery & Cash on Delivery & 500 & No & 234567891 & +96123456789 & DL1009 & 2024-11-29 \\
+  O110 & New Year's package & Apple Pay & 750 & Yes & 789123456 & +96156789012 & DL1010 & 2024-12-31 \\
+  O111 & First-time discount & PayPal & 120 & Yes & 654321987 & +96167890124 & DL1011 & 2024-01-10 \\
+  O112 & VIP priority & Credit Card & 800 & No & 321987654 & +96178901235 & DL1012 & 2024-02-14 \\
+  O113 & Happy Birthday! & Apple Pay & 180 & Yes & 987123456 & +96189012346 & DL1013 & 2024-03-03 \\
+  O114 & Clearance sale & PayPal & 450 & No & 654789321 & +96190123457 & DL1014 & 2024-11-05 \\
+  O115 & Loyalty customer & Cash on Delivery & 300 & No & 123459876 & +96101234568 & DL1015 & 2024-04-22
+}
+
+\TableWide{Product}{
+  \underline{SKU} & Name & Price & Description & Weight & Brand & Width & Height & Length & \textit{Category\_name} & \textit{Supplier\_website} \\
+  \hline
+  1001 & Smartphone & 600 & 5G-enabled phone & 200g & TechBrand & 7cm & 15cm & 0.8cm & Electronics & www.techbrand.com \\
+  1002 & Laptop & 1200 & Ultrabook with 16GB RAM & 1.5kg & ComputeX & 32cm & 22cm & 1.5cm & Electronics & www.computex.com \\
+  1003 & Office Chair & 150 & Ergonomic chair & 12kg & ComfortCo & 60cm & 120cm & 60cm & Furniture & www.comfortco.com \\
+  1004 & Running Shoes & 100 & Lightweight shoes & 500g & SportWear & 12cm & 35cm & 10cm & Sports & www.sportwear.com \\
+  1005 & Acoustic Guitar & 300 & 6-string guitar & 3kg & MusicPro & 38cm & 100cm & 12cm & Music & www.musicpro.com \\
+  1006 & Refrigerator & 800 & Double door fridge & 65kg & HomeAppl & 90cm & 180cm & 75cm & Electronics & www.homeappl.com \\
+  1007 & LED TV & 400 & 50-inch 4K UHD & 8kg & VisionCo & 112cm & 65cm & 5cm & Electronics & www.visionco.com \\
+  1008 & Blender & 70 & High-speed blender & 2kg & KitchenX & 20cm & 40cm & 15cm & Electronics & www.kitchenx.com \\
+  1009 & T-Shirt & 25 & Cotton T-shirt & 250g & FashionHub & 30cm & 80cm & 1cm & Clothing & www.fashionhub.com \\
+  1010 & Watch & 500 & Smartwatch with GPS & 200g & TimeKeep & 5cm & 5cm & 1cm & Jewelry & www.timekeep.com \\
+  1011 & Textbook & 50 & Advanced mathematics book & 1kg & EduBooks & 21cm & 28cm & 3cm & Books & www.edubooks.com \\
+  1012 & Desk Lamp & 30 & LED desk lamp & 1.5kg & LightPro & 15cm & 40cm & 15cm & Furniture & www.lightpro.com \\
+  1013 & Wireless Headphones & 150 & Noise-canceling headphones & 300g & AudioMax & 18cm & 20cm & 5cm & Electronics & www.audiomax.com \\
+  1014 & Soccer Ball & 40 & FIFA approved & 450g & SportWear & 22cm & 22cm & 22cm & Sports & www.sportwear.com \\
+  1015 & Gaming Console & 500 & Next-gen console & 3kg & GameZone & 30cm & 10cm & 25cm & Electronics & www.gamezone.com
+}
+
+\Table{Purchased}{
+  \underline{\textit{Product\_SKU}} & \underline{\textit{Order\_id}} & Quantity & Amount \\
+  \hline
+  1001 & O101 & 2 & 1200 \\
+  1002 & O102 & 1 & 1200 \\
+  1003 & O103 & 1 & 150 \\
+  1004 & O104 & 2 & 200 \\
+  1005 & O105 & 1 & 300 \\
+  1006 & O106 & 1 & 800 \\
+  1007 & O107 & 1 & 400 \\
+  1008 & O108 & 3 & 210 \\
+  1009 & O109 & 5 & 125 \\
+  1010 & O110 & 2 & 1000 \\
+  1011 & O111 & 1 & 50 \\
+  1012 & O112 & 2 & 60 \\
+  1013 & O113 & 1 & 150 \\
+  1014 & O114 & 3 & 120 \\
+  1015 & O115 & 1 & 500
+}
+
+\TableWide{Reviews}{
+  \underline{\textit{Product\_SKU}} & \underline{\textit{Customer\_phone\_number}} & Review\_date & Rating & Comment & Description \\
+  \hline
+  1001 & +96134567890 & 2024-09-01 & 5 & Great phone! & Excellent performance \\
+  1002 & +96198765432 & 2024-08-20 & 4 & Good value & Worth the price \\
+  1003 & +96145678901 & 2024-07-10 & 3 & Comfortable chair & Could be sturdier \\
+  1004 & +96167890123 & 2024-06-05 & 5 & Love these shoes & Perfect fit \\
+  1005 & +96178901234 & 2024-05-15 & 4 & Nice sound & Great for beginners \\
+  1006 & +96189012345 & 2024-04-22 & 5 & Amazing fridge & Lots of space \\
+  1007 & +96190123456 & 2024-03-30 & 4 & Clear picture & Excellent for gaming \\
+  1008 & +96101234567 & 2024-02-18 & 3 & Good blender & Noisy motor \\
+  1009 & +96123456789 & 2024-01-11 & 5 & Comfortable T-shirt & Soft fabric \\
+  1010 & +96156789012 & 2024-09-25 & 4 & Nice smartwatch & Battery life could be better \\
+  1011 & +96167890124 & 2024-08-05 & 5 & Informative book & Highly recommended \\
+  1012 & +96178901235 & 2024-07-22 & 4 & Useful lamp & Bright and adjustable \\
+  1013 & +96189012346 & 2024-06-12 & 5 & Excellent headphones & Superb sound quality \\
+  1014 & +96190123457 & 2024-05-02 & 4 & Great soccer ball & Durable material \\
+  1015 & +96101234568 & 2024-03-28 & 5 & Fantastic console & Best for gaming enthusiasts
+}
+
+\TableWide{Support Ticket}{
+  \underline{Ticket\_id} & Description & Subject & Status & Priority & \textit{Employee\_SSN} & \textit{Customer\_phone\_number} \\
+  \hline
+  T001 & Issue with product delivery & Delivery Issue & Open & High & 123456789 & +96134567890 \\
+  T002 & Request for refund & Refund Request & Closed & Medium & 987654321 & +96198765432 \\
+  T003 & Product not working & Defective Product & Open & High & 567894321 & +96145678901 \\
+  T004 & Inquiry about order status & Order Inquiry & Resolved & Low & 543216789 & +96167890123 \\
+  T005 & Delayed shipment & Shipment Delay & Open & Medium & 678912345 & +96178901234 \\
+  T006 & Cancel order request & Order Cancellation & Closed & Medium & 876543219 & +96189012345 \\
+  T007 & Issue with payment & Payment Issue & Resolved & High & 345678912 & +96190123456 \\
+  T008 & Exchange request & Product Exchange & Open & Medium & 456789123 & +96101234567 \\
+  T009 & Warranty inquiry & Warranty Inquiry & Resolved & Low & 234567891 & +96123456789 \\
+  T010 & Complaint about service & Service Complaint & Open & High & 789123456 & +96156789012 \\
+  T011 & Missing items in order & Missing Items & Open & Medium & 654321987 & +96167890124 \\
+  T012 & Subscription issue & Subscription Problem & Resolved & Low & 321987654 & +96178901235 \\
+  T013 & Wrong product delivered & Wrong Product & Open & High & 987123456 & +96189012346 \\
+  T014 & Feedback submission & Customer Feedback & Closed & Low & 654789321 & +96190123457 \\
+  T015 & Request for discount & Discount Request & Open & Medium & 123459876 & +96101234568
+}
+
+\TableWide{Supplier}{
+  \underline{Website} & Supplier\_name & Contact\_person\_email & Contact\_person\_first\_name & Contact\_person\_last\_name & Contact\_person\_phone\_number \\
+  \hline
+  www.techbrand.com & TechBrand & contact@techbrand.com & Alice & Doe & +96134567890 \\
+  www.computex.com & ComputeX & support@computex.com & John & Smith & +96198765432 \\
+  www.comfortco.com & ComfortCo & info@comfortco.com & Emma & Johnson & +96145678901 \\
+  www.sportwear.com & SportWear & sales@sportwear.com & Michael & Brown & +96167890123 \\
+  www.musicpro.com & MusicPro & music@musicpro.com & Sarah & Lee & +96178901234 \\
+  www.homeappl.com & HomeAppl & appliances@homeappl.com & David & Evans & +96189012345 \\
+  www.visionco.com & VisionCo & vision@visionco.com & Jessica & Taylor & +96190123456 \\
+  www.kitchenx.com & KitchenX & service@kitchenx.com & Kevin & Wilson & +96101234567 \\
+  www.fashionhub.com & FashionHub & hello@fashionhub.com & Emily & Harris & +96123456789 \\
+  www.timekeep.com & TimeKeep & contact@timekeep.com & Daniel & Martin & +96156789012 \\
+  www.edubooks.com & EduBooks & edu@edubooks.com & Olivia & White & +96167890124 \\
+  www.lightpro.com & LightPro & light@lightpro.com & Robert & Scott & +96178901235 \\
+  www.audiomax.com & AudioMax & audio@audiomax.com & Sophia & Anderson & +96189012346 \\
+  www.gamezone.com & GameZone & games@gamezone.com & Liam & Thomas & +96190123457 \\
+  www.sportwear.com & SportWear & store@sportwear.com & Noah & Miller & +96101234568
+}
+
+\Table{Wishlist}{
+  \underline{SKU} & \underline{\textit{Customer\_phone\_number}} & Total\_amount \\
+  \hline
+  1001 & +96134567890 & 600 \\
+  1002 & +96198765432 & 1200 \\
+  1003 & +96145678901 & 150 \\
+  1004 & +96167890123 & 100 \\
+  1005 & +96178901234 & 300 \\
+  1006 & +96189012345 & 800 \\
+  1007 & +96190123456 & 400 \\
+  1008 & +96101234567 & 210 \\
+  1009 & +96123456789 & 125 \\
+  1010 & +96156789012 & 1000 \\
+  1011 & +96167890124 & 50 \\
+  1012 & +96178901235 & 60 \\
+  1013 & +96189012346 & 150 \\
+  1014 & +96190123457 & 120 \\
+  1015 & +96101234568 & 500
+}
+
+\Table{Working hours}{
+  \underline{\textit{Branch\_phone\_number}} & \underline{Day} & \underline{Opening\_hour} & \underline{Closing\_hour} \\
+  \hline
+  +96111111111 & Monday & 09:00 & 18:00 \\
+  +96122222222 & Tuesday & 09:00 & 18:00 \\
+  +96133333333 & Wednesday & 09:00 & 18:00 \\
+  +96144444444 & Thursday & 09:00 & 18:00 \\
+  +96155555555 & Friday & 09:00 & 18:00 \\
+  +96166666666 & Saturday & 09:00 & 14:00 \\
+  +96177777777 & Sunday & Closed & Closed \\
+  +96188888888 & Monday & 09:00 & 18:00 \\
+  +96199999999 & Tuesday & 09:00 & 18:00 \\
+  +96112345678 & Wednesday & 09:00 & 18:00 \\
+  +96198765432 & Thursday & 09:00 & 18:00 \\
+  +96124681357 & Friday & 09:00 & 18:00 \\
+  +96165432198 & Saturday & 09:00 & 14:00 \\
+  +96111223344 & Sunday & Closed & Closed \\
+  +96144332211 & Monday & 09:00 & 18:00
+}
