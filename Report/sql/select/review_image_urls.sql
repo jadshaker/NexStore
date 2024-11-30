@@ -1,0 +1,1 @@
+SELECT * FROM Review_Image_URLs;
