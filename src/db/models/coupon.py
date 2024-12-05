@@ -1,8 +1,6 @@
-from datetime import date
-
 from pydantic import NonNegativeFloat, NonNegativeInt
 
-from src.common.utils.types import ID, Text, DateStr
+from src.common.utils.types import ID, DateStr, Text
 from src.db.models import BaseModel
 
 

@@ -5,6 +5,6 @@ from src.db.models import BaseModel
 
 
 class Wishlist(BaseModel):
-    product_SKU: VC
+    product_sku: VC
     customer_phone_number: PhoneNumber
     total_amount: NonNegativeFloat

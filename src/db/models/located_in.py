@@ -5,7 +5,7 @@ from src.db.models import BaseModel
 
 
 class LocatedIn(BaseModel):
-    product_SKU: VC
+    product_sku: VC
     branch_phone_number: PhoneNumber
     quantity: NonNegativeInt
     shelf_location: VC

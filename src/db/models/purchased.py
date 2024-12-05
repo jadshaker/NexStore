@@ -5,7 +5,7 @@ from src.db.models import BaseModel
 
 
 class Purchased(BaseModel):
-    product_SKU: VC
+    product_sku: VC
     order_id: ID
     quantity: NonNegativeInt
     amount: NonNegativeFloat

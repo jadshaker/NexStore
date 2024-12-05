@@ -3,6 +3,6 @@ from src.db.models import BaseModel
 
 
 class ReviewImageUrls(BaseModel):
-    product_SKU: VC
+    product_sku: VC
     customer_phone_number: PhoneNumber
     product_image_url: VC

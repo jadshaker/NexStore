@@ -5,7 +5,7 @@ from src.db.models import BaseModel
 
 
 class Product(BaseModel):
-    SKU: VC
+    sku: VC
     name: VC
     price: NonNegativeFloat
     description: Text

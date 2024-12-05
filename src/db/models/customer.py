@@ -1,9 +1,8 @@
-from datetime import datetime
 from typing import Optional
 
 from pydantic import EmailStr, NonNegativeInt
 
-from src.common.utils.types import VC, PhoneNumber
+from src.common.utils.types import VC, DateStr, PhoneNumber
 from src.db.models import BaseModel
 
 
@@ -13,9 +12,9 @@ class Customer(BaseModel):
     first_name: VC
     last_name: VC
     gender: Optional[VC]
-    registration_date: datetime
+    registration_date: DateStr
     password_hashed: VC
-    date_of_birth: datetime
+    date_of_birth: DateStr
     country: VC
     state: VC
     city: VC

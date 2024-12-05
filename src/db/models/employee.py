@@ -1,19 +1,18 @@
-from datetime import datetime
 from typing import Optional
 
 from pydantic import EmailStr, NonNegativeInt
 
-from src.common.utils.types import VC, PhoneNumber
+from src.common.utils.types import VC, DateStr, PhoneNumber
 from src.db.models import BaseModel
 
 
 class Employee(BaseModel):
-    SSN: VC
+    ssn: VC
     position: VC
     salary: NonNegativeInt
-    hire_date: datetime
+    hire_date: DateStr
     gender: VC
-    date_of_birth: datetime
+    date_of_birth: DateStr
     email: EmailStr
     first_name: VC
     last_name: VC
@@ -25,5 +24,5 @@ class Employee(BaseModel):
     building: NonNegativeInt
     apartment: NonNegativeInt
     branch_phone_number: PhoneNumber
-    supervisor_SSN: Optional[VC]
+    supervisor_ssn: Optional[VC]
     department_name: VC
