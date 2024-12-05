@@ -115,67 +115,50 @@ class BaseRouter(Generic[BaseModelType]):
                 message=str(e),
             )
 
-    # async def get_by_id(self, id: UuidStr, dao: BaseDAO[BaseModelType]) -> APIResponse:
-    #     try:
-    #         item = dao.get_by_id(id)
-    #         if item:
-    #             return APIResponse(
-    #                 status_code=status.HTTP_200_OK,
-    #                 message=f"{self.name} found",
-    #                 data=BaseResponse[BaseModelType](items=[item]).model_dump(),
-    #             )
-    #         return APIResponse(
-    #             status_code=status.HTTP_404_NOT_FOUND,
-    #             message=f"{self.name} not found",
-    #         )
-    #     except Exception as e:
-    #         return APIResponse(
-    #             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-    #             message=str(e),
-    #         )
+    async def update(
+        self,
+        primary_key: list[tuple[str, str]],
+        request: dict[str, Any],
+        dao: BaseDAO[BaseModelType],
+    ) -> APIResponse:
+        try:
+            item = dao.update(primary_key, request)
+            if item:
+                return APIResponse(
+                    status_code=status.HTTP_200_OK,
+                    message=f"{self.name} updated",
+                    data=BaseResponse[BaseModelType](items=[item]).model_dump(),
+                )
+            return APIResponse(
+                status_code=status.HTTP_404_NOT_FOUND,
+                message=f"{self.name} not updated",
+            )
+        except Exception as e:
+            return APIResponse(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                message=str(e),
+            )
 
-    # async def update(
-    #     self,
-    #     id: UuidStr,
-    #     request: dict[str, Any],
-    #     dao: BaseDAO[BaseModelType],
-    # ) -> APIResponse:
-    #     try:
-    #         item = dao.update(id, request)
-    #         if item:
-    #             return APIResponse(
-    #                 status_code=status.HTTP_200_OK,
-    #                 message=f"{self.name} updated",
-    #                 data=BaseResponse[BaseModelType](items=[item]).model_dump(),
-    #             )
-    #         return APIResponse(
-    #             status_code=status.HTTP_404_NOT_FOUND,
-    #             message=f"{self.name} not updated",
-    #         )
-    #     except Exception as e:
-    #         return APIResponse(
-    #             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-    #             message=str(e),
-    #         )
-
-    # async def delete(self, id: UuidStr, dao: BaseDAO[BaseModelType]) -> APIResponse:
-    #     try:
-    #         item = dao.delete(id)
-    #         if item:
-    #             return APIResponse(
-    #                 status_code=status.HTTP_200_OK,
-    #                 message=f"{self.name} deleted",
-    #                 data=BaseResponse[BaseModelType](items=[item]).model_dump(),
-    #             )
-    #         return APIResponse(
-    #             status_code=status.HTTP_404_NOT_FOUND,
-    #             message=f"{self.name} not deleted",
-    #         )
-    #     except Exception as e:
-    #         return APIResponse(
-    #             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-    #             message=str(e),
-    #         )
+    async def delete(
+        self, primary_key: list[tuple[str, str]], dao: BaseDAO[BaseModelType]
+    ) -> APIResponse:
+        try:
+            item = dao.delete(primary_key)
+            if item:
+                return APIResponse(
+                    status_code=status.HTTP_200_OK,
+                    message=f"{self.name} deleted",
+                    data=BaseResponse[BaseModelType](items=[item]).model_dump(),
+                )
+            return APIResponse(
+                status_code=status.HTTP_404_NOT_FOUND,
+                message=f"{self.name} not deleted",
+            )
+        except Exception as e:
+            return APIResponse(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                message=str(e),
+            )
 
     def build_router(self) -> APIRouter:
         @self.router.get("/")
@@ -199,26 +182,19 @@ class BaseRouter(Generic[BaseModelType]):
         ) -> APIResponse:
             return await self.create_many(request, dao)
 
-        # @self.router.get("/{id}")
-        # async def get_by_id(
-        #     id: UuidStr,
-        #     dao: BaseDAO[BaseModelType] = Depends(self.get_dao),
-        # ) -> APIResponse:
-        #     return await self.get_by_id(id, dao)
+        @self.router.put("/")
+        async def update(
+            primary_key: list[tuple[str, str]],
+            request: dict[str, Any] = self.request,
+            dao: BaseDAO[BaseModelType] = Depends(self.get_dao),
+        ) -> APIResponse:
+            return await self.update(primary_key, request, dao)
 
-        # @self.router.put("/{id}")
-        # async def update(
-        #     id: UuidStr,
-        #     request: dict[str, Any] = self.request,
-        #     dao: BaseDAO[BaseModelType] = Depends(self.get_dao),
-        # ) -> APIResponse:
-        #     return await self.update(id, request, dao)
-
-        # @self.router.delete("/{id}")
-        # async def delete(
-        #     id: UuidStr,
-        #     dao: BaseDAO[BaseModelType] = Depends(self.get_dao),
-        # ) -> APIResponse:
-        #     return await self.delete(id, dao)
+        @self.router.delete("/")
+        async def delete(
+            primary_key: list[tuple[str, str]],
+            dao: BaseDAO[BaseModelType] = Depends(self.get_dao),
+        ) -> APIResponse:
+            return await self.delete(primary_key, dao)
 
         return self.router
