@@ -9,4 +9,5 @@ category_class = BaseRouter[Category](
     model=Category,
     get_dao=get_category_dao,
 )
+
 category_router = category_class.build_router()
