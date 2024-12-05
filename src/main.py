@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 
 from src.config import Config
-from src.controller import status_router
+from src.controller.routers import branch_router, status_router
 
 app = FastAPI(
     title=Config.APP.TITLE,
@@ -21,6 +21,7 @@ app.add_middleware(
 
 
 app.include_router(status_router)
+app.include_router(branch_router)
 
 
 @app.get("/", response_class=HTMLResponse)
