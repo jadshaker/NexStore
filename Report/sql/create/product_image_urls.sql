@@ -1,7 +1,0 @@
-CREATE TABLE
-  IF NOT EXISTS Product_Image_URLs (
-    Product_SKU VC NOT NULL,
-    Product_Image_URL VC NOT NULL,
-    CONSTRAINT PK_Product_IMAGE_URLS PRIMARY KEY (Product_SKU, Product_Image_URL),
-    CONSTRAINT Product_Image_URLs_FK_Product_Sku FOREIGN KEY (Product_SKU) REFERENCES Product (SKU) ON UPDATE CASCADE ON DELETE CASCADE
-  );
