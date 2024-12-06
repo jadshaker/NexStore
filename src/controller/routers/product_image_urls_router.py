@@ -9,4 +9,5 @@ product_image_urls_class = BaseRouter[ProductImageUrls](
     model=ProductImageUrls,
     get_dao=get_product_image_urls_dao,
 )
+
 product_image_urls_router = product_image_urls_class.build_router()

@@ -9,4 +9,5 @@ orders_class = BaseRouter[Orders](
     model=Orders,
     get_dao=get_orders_dao,
 )
+
 orders_router = orders_class.build_router()

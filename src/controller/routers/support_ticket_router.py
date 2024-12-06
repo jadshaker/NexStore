@@ -9,4 +9,5 @@ support_ticket_class = BaseRouter[SupportTicket](
     model=SupportTicket,
     get_dao=get_support_ticket_dao,
 )
+
 support_ticket_router = support_ticket_class.build_router()

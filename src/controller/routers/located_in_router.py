@@ -9,4 +9,5 @@ located_in_class = BaseRouter[LocatedIn](
     model=LocatedIn,
     get_dao=get_located_in_dao,
 )
+
 located_in_router = located_in_class.build_router()

@@ -9,4 +9,5 @@ department_location_class = BaseRouter[DepartmentLocation](
     model=DepartmentLocation,
     get_dao=get_department_location_dao,
 )
+
 department_location_router = department_location_class.build_router()

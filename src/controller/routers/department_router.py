@@ -9,4 +9,5 @@ department_class = BaseRouter[Department](
     model=Department,
     get_dao=get_department_dao,
 )
+
 department_router = department_class.build_router()

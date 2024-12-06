@@ -9,4 +9,5 @@ wishlist_class = BaseRouter[Wishlist](
     model=Wishlist,
     get_dao=get_wishlist_dao,
 )
+
 wishlist_router = wishlist_class.build_router()

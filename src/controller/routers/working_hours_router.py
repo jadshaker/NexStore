@@ -9,4 +9,5 @@ working_hours_class = BaseRouter[WorkingHours](
     model=WorkingHours,
     get_dao=get_working_hours_dao,
 )
+
 working_hours_router = working_hours_class.build_router()

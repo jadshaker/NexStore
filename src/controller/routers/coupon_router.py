@@ -9,4 +9,5 @@ coupon_class = BaseRouter[Coupon](
     model=Coupon,
     get_dao=get_coupon_dao,
 )
+
 coupon_router = coupon_class.build_router()

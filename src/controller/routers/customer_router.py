@@ -9,4 +9,5 @@ customer_class = BaseRouter[Customer](
     model=Customer,
     get_dao=get_customer_dao,
 )
+
 customer_router = customer_class.build_router()

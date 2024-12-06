@@ -9,4 +9,5 @@ product_class = BaseRouter[Product](
     model=Product,
     get_dao=get_product_dao,
 )
+
 product_router = product_class.build_router()

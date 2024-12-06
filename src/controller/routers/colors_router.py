@@ -9,4 +9,5 @@ colors_class = BaseRouter[Colors](
     model=Colors,
     get_dao=get_colors_dao,
 )
+
 colors_router = colors_class.build_router()

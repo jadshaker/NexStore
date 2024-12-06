@@ -9,4 +9,5 @@ review_image_urls_class = BaseRouter[ReviewImageUrls](
     model=ReviewImageUrls,
     get_dao=get_review_image_urls_dao,
 )
+
 review_image_urls_router = review_image_urls_class.build_router()

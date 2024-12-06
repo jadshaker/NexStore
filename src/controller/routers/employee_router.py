@@ -9,4 +9,5 @@ employee_class = BaseRouter[Employee](
     model=Employee,
     get_dao=get_employee_dao,
 )
+
 employee_router = employee_class.build_router()

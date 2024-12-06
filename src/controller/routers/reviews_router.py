@@ -9,4 +9,5 @@ reviews_class = BaseRouter[Reviews](
     model=Reviews,
     get_dao=get_reviews_dao,
 )
+
 reviews_router = reviews_class.build_router()

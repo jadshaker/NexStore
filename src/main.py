@@ -21,12 +21,12 @@ from src.controller.routers import (
     purchased_router,
     review_image_urls_router,
     reviews_router,
-    status_router,
     supplier_router,
     support_ticket_router,
     wishlist_router,
     working_hours_router,
 )
+from src.controller.status import status_router
 
 app = FastAPI(
     title=Config.APP.TITLE,
@@ -72,7 +72,7 @@ async def root() -> HTMLResponse:
     html_content = """
     <html>
         <head>
-            <title>GPA Calculator API</title>
+            <title>NexStore API</title>
             <style>
                 body {
                     font-family: Arial, sans-serif;
@@ -90,7 +90,7 @@ async def root() -> HTMLResponse:
             </style>
         </head>
         <body>
-            <h1>Welcome to the GPA calculator API</h1>
+            <h1>Welcome to the NexStore API</h1>
             <p>To access the docs, visit <a href="/docs">docs</a> or <a href="/redoc">redoc</a></p>
         </body>
     </html>

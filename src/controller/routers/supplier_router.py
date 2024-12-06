@@ -9,4 +9,5 @@ supplier_class = BaseRouter[Supplier](
     model=Supplier,
     get_dao=get_supplier_dao,
 )
+
 supplier_router = supplier_class.build_router()

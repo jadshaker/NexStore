@@ -9,4 +9,5 @@ driver_class = BaseRouter[Driver](
     model=Driver,
     get_dao=get_driver_dao,
 )
+
 driver_router = driver_class.build_router()

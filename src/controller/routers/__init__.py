@@ -15,7 +15,6 @@ from .product_router import product_router
 from .purchased_router import purchased_router
 from .review_image_urls_router import review_image_urls_router
 from .reviews_router import reviews_router
-from .status import status_router
 from .supplier_router import supplier_router
 from .support_ticket_router import support_ticket_router
 from .wishlist_router import wishlist_router
@@ -39,7 +38,6 @@ __all__ = [
     "purchased_router",
     "review_image_urls_router",
     "reviews_router",
-    "status_router",
     "supplier_router",
     "support_ticket_router",
     "wishlist_router",

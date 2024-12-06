@@ -9,4 +9,5 @@ purchased_class = BaseRouter[Purchased](
     model=Purchased,
     get_dao=get_purchased_dao,
 )
+
 purchased_router = purchased_class.build_router()

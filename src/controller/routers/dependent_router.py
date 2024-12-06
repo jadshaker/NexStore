@@ -9,4 +9,5 @@ dependent_class = BaseRouter[Dependent](
     model=Dependent,
     get_dao=get_dependent_dao,
 )
+
 dependent_router = dependent_class.build_router()
