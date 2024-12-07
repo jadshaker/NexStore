@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 
 from src.config import Config
-from src.controller.routers import dao_router
+from src.controller.routers import dao_router, view_router
 from src.controller.status import status_router
 
 app = FastAPI(
@@ -23,6 +23,7 @@ app.add_middleware(
 
 app.include_router(status_router)
 app.include_router(dao_router)
+app.include_router(view_router)
 
 
 @app.get("/", response_class=HTMLResponse)

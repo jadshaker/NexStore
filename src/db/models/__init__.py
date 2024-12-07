@@ -4,6 +4,7 @@ from .category import Category
 from .colors import Colors
 from .coupon import Coupon
 from .customer import Customer
+from .customer_orders import CustomerOrders
 from .department import Department
 from .department_location import DepartmentLocation
 from .dependent import Dependent
@@ -28,6 +29,7 @@ __all__ = [
     "Colors",
     "Coupon",
     "Customer",
+    "CustomerOrders",
     "Department",
     "DepartmentLocation",
     "Dependent",

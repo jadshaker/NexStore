@@ -5,6 +5,7 @@ class SupabaseTables:
     COLORS: str = "colors"
     COUPON: str = "coupon"
     CUSTOMER: str = "customer"
+    CUSTOMER_ORDERS: str = "customer_orders"
     DEPARTMENT: str = "department"
     DEPARTMENT_LOCATION: str = "department_location"
     DEPENDENT: str = "dependent"
