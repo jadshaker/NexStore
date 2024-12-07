@@ -1,4 +1,4 @@
-from src.controller.routers._base_router import BaseRouter
+from src.controller.routers.dao._base_router import BaseRouter
 from src.db.dependencies import get_category_dao
 from src.db.models import Category
 

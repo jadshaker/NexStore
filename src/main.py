@@ -3,29 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 
 from src.config import Config
-from src.controller.routers import (
-    branch_router,
-    category_router,
-    colors_router,
-    coupon_router,
-    customer_router,
-    department_location_router,
-    department_router,
-    dependent_router,
-    driver_router,
-    employee_router,
-    located_in_router,
-    orders_router,
-    product_image_urls_router,
-    product_router,
-    purchased_router,
-    review_image_urls_router,
-    reviews_router,
-    supplier_router,
-    support_ticket_router,
-    wishlist_router,
-    working_hours_router,
-)
+from src.controller.routers import dao_router
 from src.controller.status import status_router
 
 app = FastAPI(
@@ -44,27 +22,7 @@ app.add_middleware(
 
 
 app.include_router(status_router)
-app.include_router(branch_router)
-app.include_router(category_router)
-app.include_router(colors_router)
-app.include_router(coupon_router)
-app.include_router(customer_router)
-app.include_router(department_location_router)
-app.include_router(department_router)
-app.include_router(dependent_router)
-app.include_router(driver_router)
-app.include_router(employee_router)
-app.include_router(located_in_router)
-app.include_router(orders_router)
-app.include_router(product_image_urls_router)
-app.include_router(product_router)
-app.include_router(purchased_router)
-app.include_router(review_image_urls_router)
-app.include_router(reviews_router)
-app.include_router(supplier_router)
-app.include_router(support_ticket_router)
-app.include_router(wishlist_router)
-app.include_router(working_hours_router)
+app.include_router(dao_router)
 
 
 @app.get("/", response_class=HTMLResponse)
