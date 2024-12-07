@@ -6,6 +6,7 @@ from .coupon import Coupon
 from .customer import Customer
 from .customer_orders import CustomerOrders
 from .department import Department
+from .department_employees import DepartmentEmployees
 from .department_location import DepartmentLocation
 from .dependent import Dependent
 from .driver import Driver
@@ -14,6 +15,7 @@ from .located_in import LocatedIn
 from .orders import Orders
 from .product import Product
 from .product_image_urls import ProductImageUrls
+from .product_revenue import ProductRevenue
 from .purchased import Purchased
 from .review_image_urls import ReviewImageUrls
 from .reviews import Reviews
@@ -31,6 +33,7 @@ __all__ = [
     "Customer",
     "CustomerOrders",
     "Department",
+    "DepartmentEmployees",
     "DepartmentLocation",
     "Dependent",
     "Driver",
@@ -39,6 +42,7 @@ __all__ = [
     "Orders",
     "Product",
     "ProductImageUrls",
+    "ProductRevenue",
     "Purchased",
     "ReviewImageUrls",
     "Reviews",

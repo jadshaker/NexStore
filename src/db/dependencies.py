@@ -27,6 +27,8 @@ from src.db.dao import (
 )
 
 from src.db.views import CustomerOrdersDAO
+from src.db.views import DepartmentEmployeesDAO
+from src.db.views import ProductRevenueDAO
 
 
 def get_branch_dao(client: Client = Depends(get_client)) -> BranchDAO:
@@ -121,3 +123,9 @@ def get_working_hours_dao(client: Client = Depends(get_client)) -> WorkingHoursD
 
 def get_customer_orders_dao(client: Client = Depends(get_client)) -> CustomerOrdersDAO:
     return CustomerOrdersDAO(client)
+
+def get_department_employees_dao(client: Client = Depends(get_client)) -> DepartmentEmployeesDAO:
+    return DepartmentEmployeesDAO(client)
+
+def get_product_revenue_dao(client: Client = Depends(get_client)) -> ProductRevenueDAO:
+    return ProductRevenueDAO(client)
